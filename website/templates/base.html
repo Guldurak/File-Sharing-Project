@@ -36,8 +36,12 @@
           <a class="nav-item nav-link" id="home" href="/">Home</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
 
-          <li class="nav-item"><span class="navbar-text">Hello, {{user.first_name}} <h6> </h6></span></li>
-          {% else %}
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 margin-right">
+            <li class="nav-item">
+              <a class="nav-item nav-link" id="username" href="/">Hello, {{user.first_name}} </a>
+            </li>
+          </ul>{% else %}
+
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
           <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
           {% endif %}
